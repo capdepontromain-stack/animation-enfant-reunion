@@ -127,13 +127,34 @@ footer .fl{font-family:"Luckiest Guy",cursive;font-size:22px;color:#fff}
 .bande-avis{background:var(--jaune);color:var(--encre);text-align:center;padding:16px 20px;font-weight:800}
 .bande-avis a{color:var(--bleu)}
 @media(max-width:900px){.hero .wrap{grid-template-columns:1fr}.hero .sticker{max-width:430px;margin:0 auto}}
+
+/* ===== EFFET WOW ===== */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.reveal.vu{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none}}
+.topbar{position:sticky;top:0;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+figure img{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+figure:hover img{transform:scale(1.035)}
+.hero figure:hover img{transform:scale(1.02)}
+a.btn,.btn{position:relative;overflow:hidden}
+a.btn::after,.btn::after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);transition:left .55s ease}
+a.btn:hover::after,.btn:hover::after{left:130%}
+
+.acti,.photo,.citation,.pilier,.etape{transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s}
+.acti:hover,.citation:hover,.etape:hover,.pilier:hover{transform:translateY(-7px) rotate(-.5deg)}
+.photo:hover{transform:translateY(-9px) rotate(0deg)!important;box-shadow:0 20px 44px rgba(43,43,69,.24)}
+.ballon-flot{position:absolute;font-size:36px;animation:envol 8s ease-in-out infinite;pointer-events:none;z-index:0;opacity:.85}
+@keyframes envol{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-34px) rotate(7deg)}}
+
+/* fin wow */
 </style>
+<style id="wow-css"></style>
 </head>
 <body>
 
 <div class="topbar"><a class="logo" href="./">Animation Enfants <b>· La Réunion</b></a><nav><a href="#activites">Les animations</a><a href="#photos">Photos</a><a href="blog/">Le blog</a><a href="#faq">Questions</a><a class="tel" href="tel:+262693817882">📞 06 93 81 78 82</a></nav></div>
 
-<div class="hero">
+<div class="hero"><span class="ballon-flot" style="top:14%;left:3%">🎈</span><span class="ballon-flot" style="top:64%;left:6%;animation-delay:1.8s">🎪</span><span class="ballon-flot" style="top:18%;right:4%;animation-delay:3s">🎈</span><span class="ballon-flot" style="bottom:12%;right:8%;animation-delay:.9s">✨</span>
   <div class="wrap">
     <div>
       <span class="etq">🎈 Animations enfants clé en main — 974</span>
@@ -312,6 +333,28 @@ footer .fl{font-family:"Luckiest Guy",cursive;font-size:22px;color:#fff}
 {"@type":"HowToStep","position":2,"name":"Recevoir le devis","text":"Un professionnel comme Pull Up Événements propose sous 48 h les animations adaptées, le nombre d'animateurs et le déroulé."},
 {"@type":"HowToStep","position":3,"name":"Installer et sécuriser","text":"L'équipe monte les espaces enfants, structures et ateliers, et sécurise les zones avant l'arrivée des familles."},
 {"@type":"HowToStep","position":4,"name":"Vivre la journée","text":"Les animateurs gèrent le rythme, les rotations et la sécurité ; les enfants s'amusent, les parents profitent."}]}
+</script>
+
+<script id="wow-js">
+(function(){
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var sels = 'section h2, section .sub, .cadeau, .acti, .format, .point, .etape, .citation, .pilier, .carte-photo, .photo, .planche, .polaroid, .boule, .ballon, .stat, details, .carte';
+  var els = document.querySelectorAll(sels), n = 0;
+  els.forEach(function(el){
+    if (el.closest('.hero,.topbar,footer')) return;
+    el.classList.add('reveal');
+    el.style.setProperty('--d', (n % 6) * 0.08 + 's');
+    n++;
+  });
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('vu'); io.unobserve(e.target); } });
+  }, {rootMargin: '0px 0px -8% 0px', threshold: 0.08});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  document.querySelectorAll('.surligne').forEach(function(el){
+    var io2 = new IntersectionObserver(function(en){ en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('vu'); io2.unobserve(e.target);} }); }, {threshold:.4});
+    io2.observe(el);
+  });
+})();
 </script>
 </body>
 </html>
