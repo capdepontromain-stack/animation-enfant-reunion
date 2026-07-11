@@ -11,5 +11,5 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://capdepontromain-stack.github.io/animation-enfant-reunion/sitemap.xml
-# Présentation pour les IA : https://capdepontromain-stack.github.io/animation-enfant-reunion/llms.txt
+Sitemap: https://animationenfant974.re/sitemap.xml
+# Présentation pour les IA : https://animationenfant974.re/llms.txt
