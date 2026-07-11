@@ -215,6 +215,15 @@ body{padding-bottom:54px}
 }
 
 .reveal.vu{transition:opacity .25s ease,transform .22s cubic-bezier(.2,.7,.2,1);transition-delay:0s}
+
+.vids{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;max-width:760px;margin:0 auto}
+.vid .ratio{position:relative;aspect-ratio:16/9;background:#000;border-radius:18px;overflow:hidden;border:3px solid var(--encre);box-shadow:8px 8px 0 var(--jaune)}
+.vid p{margin-top:12px;font-weight:800;font-size:15px;text-align:center}
+.ytf{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;cursor:pointer;background:#000;display:block}
+.ytf img{width:100%;height:100%;object-fit:cover;display:block;opacity:.92}
+.ytp{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:70px;height:50px;background:var(--rose);border-radius:16px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.5)}
+.ytp::after{content:"";width:0;height:0;border-left:19px solid #fff;border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:5px}
+.ytf:hover .ytp{background:var(--vert)}
 /* fin couture */
 </style>
 <style id="wow-css"></style>
@@ -284,6 +293,15 @@ body{padding-bottom:54px}
   </div>
 </section>
 
+<section id="video" style="background:var(--bleu)">
+  <div class="wrap">
+    <h2 class="titre" style="color:#fff">La preuve en <span style="color:var(--jaune)">vidéo</span></h2>
+    <p class="sub" style="color:#dbe7ff;text-align:center;max-width:760px;margin-left:auto;margin-right:auto">Les sourires, ça ne se raconte pas, ça se regarde : nos animations pour les marmailles, filmées sur le terrain.</p>
+    <div class="vids">
+      <div class="vid"><div class="ratio"><button class="ytf" data-id="ziHyh-5B7dA" aria-label="Lire la vidéo : Animations pour les enfants à La Réunion par Pull Up Événements"><img src="https://i.ytimg.com/vi/ziHyh-5B7dA/hqdefault.jpg" alt="Animations pour les enfants à La Réunion — vidéo Pull Up Événements" loading="lazy" decoding="async"><span class="ytp" aria-hidden="true"></span></button></div><p style="color:#dbe7ff">Nos animations enfants en action 🎈</p></div>
+    </div>
+  </div>
+</section>
 <section style="padding-top:40px">
   <div class="wrap">
     <div class="ballons">
@@ -325,6 +343,7 @@ body{padding-bottom:54px}
     <p>Pull Up Événements anime les enfants sur toute l'île : <b>Sainte-Marie</b> (nous animons le kids club et « La Scène du Kids Club » de la galerie Duparc), <b>Le Port</b> (Cap Sacré-Cœur), <b>Saint-Pierre</b> (Casabona), mais aussi <b>Saint-Denis</b>, <b>Saint-Paul</b>, <b>Saint-Gilles</b> et <b>Le Tampon</b> pour les journées famille d'entreprise, les fêtes de quartier et les événements privés ou professionnels.</p>
     <p style="margin-top:14px">Pour les <b>entreprises et les CSE</b>, l'animation enfants est souvent la pièce maîtresse d'une journée famille réussie : pendant que les marmailles enchaînent ateliers, structures gonflables et maquillage sous l'œil de nos animateurs, les parents profitent VRAIMENT de la journée — c'est aussi ça, la cohésion. Et la même équipe peut orchestrer tout le reste : le <a href="https://teambuilding974.re/">team building des adultes</a>, l'<a href="https://arbredenoel974.re/">arbre de Noël</a> en fin d'année, l'<a href="https://hotesse-reunion.re/">accueil par nos hôtesses</a> et la <a href="https://pullup.re/">logistique complète de vos événements</a>.</p>
     <p style="margin-top:14px">Pour les <b>galeries commerciales et enseignes</b>, nos animations créent du trafic et de la fidélité : ateliers gratuits à thème (fête des mères, Noël, vacances scolaires), mascottes en déambulation, kids clubs récurrents. Les familles viennent pour les enfants… et restent pour le reste.</p>
+    <p style="margin-top:14px"><b>À quoi ressemble une journée famille réussie ?</b> 10 h : les familles arrivent, accueillies par nos animateurs, et les enfants filent vers les zones par âges — motricité pour les petits, ateliers créatifs pour les moyens. 11 h 30 : la mascotte fait son entrée et déclenche la première vague de photos. Midi : pause repas, la barbe à papa patiente sagement. 14 h : maquillage et structures gonflables tournent à plein régime pendant que les adultes savourent leur café. 16 h : mini-disco ou petite scène pour finir en musique — et des marmailles qui négocient dix minutes de plus. C'est ce déroulé, rodé sur des dizaines d'événements et de kids clubs en galerie, que nous adaptons à votre lieu, vos horaires et vos effectifs.</p>
   </div>
 </section>
 
@@ -395,7 +414,11 @@ body{padding-bottom:54px}
 {"@type":"Question","name":"Que comprend un kids club en galerie commerciale ?","acceptedAnswer":{"@type":"Answer","text":"Un espace enfants complet : tapis, parcours de motricité, jeux, ateliers créatifs à thème et animateurs dédiés. Pull Up anime par exemple le kids club et « La Scène du Kids Club » de la galerie Duparc à Sainte-Marie."}},
 {"@type":"Question","name":"Les animations enfants sont-elles encadrées ?","acceptedAnswer":{"@type":"Answer","text":"Oui : animateurs professionnels, zones délimitées, rotations organisées et encadrement des structures gonflables — les parents profitent de leur journée l'esprit tranquille."}},
 {"@type":"Question","name":"Animez-vous les journées famille des entreprises et des CSE ?","acceptedAnswer":{"@type":"Answer","text":"Oui : pendant que les enfants enchaînent les activités encadrées, les adultes profitent de la journée — et la même équipe peut organiser le team building des adultes, le repas et la logistique complète."}},
-{"@type":"Question","name":"Combien coûte une animation enfants à La Réunion ?","acceptedAnswer":{"@type":"Answer","text":"Le budget dépend du nombre d'enfants, de la durée, des animations et du lieu. Pull Up Événements envoie une offre sur mesure sous 48 h, sans engagement : 06 93 81 78 82."}}]}
+{"@type":"Question","name":"Combien coûte une animation enfants à La Réunion ?","acceptedAnswer":{"@type":"Answer","text":"Le budget dépend du nombre d'enfants, de la durée, des animations et du lieu. Pull Up Événements envoie une offre sur mesure sous 48 h, sans engagement : 06 93 81 78 82."}},
+{"@type":"Question","name":"Proposez-vous le maquillage pour enfants à La Réunion ?","acceptedAnswer":{"@type":"Answer","text":"Oui, l'atelier maquillage est l'un des plus demandés : tigres, papillons, super-héros, avec du matériel adapté aux peaux des enfants et des maquilleuses rapides pour que la file avance."}},
+{"@type":"Question","name":"Peut-on avoir des mascottes à son événement à La Réunion ?","acceptedAnswer":{"@type":"Answer","text":"Oui : peluches géantes, princesses et personnages costumés, en déambulation ou en séance photo — l'animation la plus photographiée de toutes."}},
+{"@type":"Question","name":"Quelles animations pour attirer des familles en galerie commerciale ?","acceptedAnswer":{"@type":"Answer","text":"Ateliers gratuits à thème (fête des mères, Noël, vacances), mascottes en déambulation et kids clubs récurrents : les familles viennent pour les enfants et restent pour les boutiques. Pull Up est le référent animations des galeries Casabona, Cap Sacré-Cœur et Duparc."}},
+{"@type":"Question","name":"Faites-vous les arbres de Noël et les événements privés ?","acceptedAnswer":{"@type":"Answer","text":"Les arbres de Noël d'entreprise oui, via le service dédié arbredenoel974.re. Pour les événements privés, contactez le 06 93 81 78 82 avec votre projet : selon la période et le format, l'équipe vous dira ce qui est possible."}}]}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"HowTo","name":"Comment organiser une animation enfants à La Réunion","description":"La méthode en 4 étapes pour une animation enfants réussie à La Réunion.","step":[
@@ -550,6 +573,18 @@ body{padding-bottom:54px}
     });
   }
 })();
+</script>
+<script id="ytf-js">
+document.addEventListener('click',function(e){
+  var b=e.target.closest('.ytf'); if(!b) return;
+  var f=document.createElement('iframe');
+  f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.id+'?autoplay=1';
+  f.title=b.getAttribute('aria-label').replace('Lire la vidéo : ','');
+  f.setAttribute('allow','accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+  f.setAttribute('allowfullscreen','');
+  f.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:0';
+  b.replaceWith(f);
+});
 </script>
 </body>
 </html>
