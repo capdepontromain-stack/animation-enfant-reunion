@@ -34,7 +34,15 @@ a{color:var(--bleu)}
 .topbar nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
 .topbar nav a{color:#dbe7ff;text-decoration:none;font-weight:700;font-size:14.5px}
 .topbar nav a.tel{background:var(--jaune);color:var(--encre);padding:8px 18px;border-radius:30px}
-@media(max-width:720px){.topbar nav{gap:6px 12px}.topbar nav a{font-size:12.5px;padding:6px 4px}.topbar nav a.tel{display:none}}
+.topbar{position:relative}
+.burger{display:none;background:none;border:0;color:#fff;font-size:26px;line-height:1;cursor:pointer;padding:4px 10px}
+@media(max-width:720px){
+.burger{display:block}
+.topbar nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bleu);flex-direction:column;align-items:stretch;gap:0;padding:6px 20px 16px;box-shadow:0 14px 26px rgba(0,0,0,.28);z-index:20}
+.topbar nav.open{display:flex}
+.topbar nav a{padding:13px 4px;font-size:15px;border-bottom:1px solid rgba(255,255,255,.2)}
+.topbar nav a.tel{background:var(--jaune);color:var(--encre);text-align:center;border-radius:30px;margin-top:12px;padding:12px}
+}
 /* vague de séparation */
 .vague{display:block;width:100%;height:34px}
 /* HERO */
@@ -250,7 +258,7 @@ figure figcaption{transition:color .2s ease}
 </head>
 <body>
 
-<div class="topbar"><a class="logo" href="./">Animation Enfants <b>· La Réunion</b></a><nav><a href="#activites">Les animations</a><a href="#photos">Photos</a><a href="blog/">Le blog</a><a href="#faq">Questions</a><a class="tel" href="tel:+262693817882">📞 06 93 81 78 82</a></nav></div>
+<div class="topbar"><a class="logo" href="./">Animation Enfants <b>· La Réunion</b></a><button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button><nav><a href="#activites">Les animations</a><a href="#photos">Photos</a><a href="blog/">Le blog</a><a href="#faq">Questions</a><a class="tel" href="tel:+262693817882">📞 06 93 81 78 82</a></nav></div>
 
 <div class="hero"><span class="ballon-flot" style="top:14%;left:3%">🎈</span><span class="ballon-flot" style="top:64%;left:6%;animation-delay:1.8s">🎪</span><span class="ballon-flot" style="top:18%;right:4%;animation-delay:3s">🎈</span><span class="ballon-flot" style="bottom:12%;right:8%;animation-delay:.9s">✨</span>
   <div class="wrap">
@@ -641,5 +649,6 @@ document.addEventListener('click',function(e){
   }, {passive:true});
 })();
 </script>
+<script>document.querySelectorAll(".burger").forEach(function(b){b.addEventListener("click",function(){var n=b.parentElement.querySelector("nav");var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o);b.textContent=o?"✕":"☰";});});</script>
 </body>
 </html>
