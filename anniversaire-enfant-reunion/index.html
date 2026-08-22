@@ -30,7 +30,8 @@ a{color:var(--bleu)}
 .topbar .logo{font-family:"Luckiest Guy",cursive;font-size:22px;color:#fff;text-decoration:none}
 .topbar .logo b{color:var(--jaune)}
 .topbar nav a{color:#dbe7ff;text-decoration:none;font-weight:700;font-size:14.5px;margin-left:18px}
-.topbar nav a.tel{background:var(--jaune);color:var(--encre);padding:8px 18px;border-radius:30px}
+.topbar nav a.tel{background:var(--jaune);color:var(--encre);padding:8px 18px;border-radius:30px;white-space:nowrap}
+@media(max-width:720px){.topbar{justify-content:center;text-align:center}.topbar .logo{font-size:18px}.topbar nav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;row-gap:8px}.topbar nav a{margin-left:12px;font-size:13.5px}}
 .entete{background:var(--bleu);color:#fff;text-align:center;padding:60px 24px 66px}
 .entete h1{font-size:clamp(34px,5.4vw,58px)}
 .entete h1 em{font-style:normal;color:var(--jaune)}
