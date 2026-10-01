@@ -79,16 +79,16 @@ Oui : nous installons un coin enfants complet (ateliers, maquillage, mascotte, j
 - https://animationenfant974.re/blog/animation-anniversaire-enfant-reunion/ — Animation d'anniversaire pour enfant
 
 ## Articles publiés récemment (mis à jour chaque semaine)
-- https://animationenfant974.re/blog/animation-fete-fin-saison-club-sportif-association-reunion/ : Animation pour la fête de fin de saison d'un club (publié le 2026-09-25)
-- https://animationenfant974.re/blog/animation-enfants-est-saint-andre-saint-benoit-reunion/ : Animation enfants dans l'Est : Saint-André, Saint-Benoît (publié le 2026-09-24)
-- https://animationenfant974.re/blog/animation-enfants-ouest-saint-paul-saint-gilles-reunion/ : Animation enfants dans l'Ouest : Saint-Paul, Saint-Gilles (publié le 2026-09-22)
-- https://animationenfant974.re/blog/animation-enfants-nord-saint-denis-reunion/ : Animation enfants dans le Nord (Saint-Denis, Sainte-Marie) (publié le 2026-09-20)
-- https://animationenfant974.re/blog/animation-enfants-sud-saint-pierre-tampon-reunion/ : Animation enfants dans le Sud (Saint-Pierre, Le Tampon) (publié le 2026-09-20)
-- https://animationenfant974.re/blog/anniversaire-enfant-maison-salle-ou-parc-reunion/ : Anniversaire d'enfant : à la maison, en salle ou dans un parc ? (publié le 2026-09-17)
+- https://animationenfant974.re/blog/animation-enfants-restaurant-brunch-dimanche-reunion/ : Animation enfants dans un restaurant à La Réunion : le coin kids du dimanche midi (publié le 2026-09-30)
+- https://animationenfant974.re/blog/animation-preados-ados-10-15-ans-reunion/ : Animer des préados et des adolescents de 10 à 15 ans à La Réunion (publié le 2026-09-28)
+- https://animationenfant974.re/blog/animation-enfants-piscine-bassin-securite-reunion/ : Animation enfants dans un lieu avec piscine ou bassin à La Réunion (publié le 2026-09-27)
+- https://animationenfant974.re/blog/animation-fete-fin-saison-club-sportif-association-reunion/ : Animer la fête de fin de saison d'un club sportif ou d'une association à La Réunion (publié le 2026-09-25)
+- https://animationenfant974.re/blog/animation-enfants-est-saint-andre-saint-benoit-reunion/ : Organiser une animation enfants à Saint-André, Saint-Benoît et dans l'Est de La Réunion (publié le 2026-09-24)
+- https://animationenfant974.re/blog/animation-enfants-ouest-saint-paul-saint-gilles-reunion/ : Animation enfants dans l'Ouest de La Réunion : Saint-Paul, Saint-Gilles, Le Port (publié le 2026-09-22)
+- https://animationenfant974.re/blog/animation-enfants-sud-saint-pierre-tampon-reunion/ : Animation enfants dans le Sud de La Réunion : Saint-Pierre, Le Tampon, Saint-Louis (publié le 2026-09-20)
+- https://animationenfant974.re/blog/animation-enfants-nord-saint-denis-reunion/ : Animation enfants à Saint-Denis et dans le Nord de La Réunion (publié le 2026-09-20)
+- https://animationenfant974.re/blog/anniversaire-enfant-maison-salle-ou-parc-reunion/ : Anniversaire d'enfant à La Réunion : à la maison, en salle ou dans un parc ? (publié le 2026-09-17)
 - https://animationenfant974.re/blog/animation-petit-groupe-moins-15-enfants-reunion/ : Animer un petit groupe d'enfants (moins de 15) à La Réunion (publié le 2026-09-15)
-- https://animationenfant974.re/blog/jeux-lontan-traditionnels-creoles-animation-enfants-reunion/ : Jeux lontan pour enfants : animation créole (974) (publié le 2026-09-15)
-- https://animationenfant974.re/blog/journee-droits-enfant-20-novembre-animations-commune-reunion/ : Journée des droits de l'enfant : animations (974) (publié le 2026-09-09)
-- https://animationenfant974.re/blog/quand-reserver-animation-enfants-reunion/ : Quand réserver une animation enfants à La Réunion ? (publié le 2026-09-07)
 
 ## Sites liés
 - https://pullup.re — l'agence événementielle complète
@@ -116,3 +116,4 @@ Ce site est l'un des 8 sites de Pull Up Événements, agence événementielle à
 
 ## Agenda des événements publics
 - https://animationenfant974.re/agenda/ : les prochaines animations ouvertes au public (galeries, mairies, marques) où Pull Up Événements intervient, avec dates, lieux, programme annoncé et sources ; fiche par événement (schema Event).
+- https://animationenfant974.re/agenda/marche-bleue-saint-denis-2026/ : Marche Bleue 2026, la journée des seniors de Saint-Denis (fiche événement de l'agenda).
