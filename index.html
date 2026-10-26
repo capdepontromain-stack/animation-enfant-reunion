@@ -18,18 +18,22 @@
 <link rel="preload" as="image" href="images/kids-club-familles-galerie-974.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Baloo+2:wght@400;600;700;800&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
 <style>
+/* polices de secours aux métriques ajustées (anti-CLS, vague 6 26/10/2026) */
+@font-face{font-family:"Luckiest Guy Secours";src:local("Arial Bold"),local("Arial-BoldMT"),local("Arial");size-adjust:107.13%;ascent-override:65.63%;descent-override:27.71%;line-gap-override:0%}
+@font-face{font-family:"Baloo 2 Secours";src:local("Arial"),local("ArialMT");size-adjust:96.59%;ascent-override:111.6%;descent-override:54.25%;line-gap-override:0%}
 :root{--bleu:#2f6df6;--jaune:#ffd23f;--rose:#ff5d8f;--vert:#3ecf8e;--violet:#7b5ea7;--papier:#fff8ef;--encre:#2b2b45}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:"Baloo 2",sans-serif;color:var(--encre);background:var(--papier);line-height:1.7;font-size:17px;background-image:radial-gradient(#ffd23f22 3px,transparent 3px),radial-gradient(#ff5d8f22 3px,transparent 3px);background-size:90px 90px,70px 70px;background-position:0 0,35px 45px}
+body{font-family:"Baloo 2","Baloo 2 Secours",sans-serif;color:var(--encre);background:var(--papier);line-height:1.7;font-size:17px;background-image:radial-gradient(#ffd23f22 3px,transparent 3px),radial-gradient(#ff5d8f22 3px,transparent 3px);background-size:90px 90px,70px 70px;background-position:0 0,35px 45px}
 img[width]{height:auto}
-h1,h2,h3{font-family:"Luckiest Guy",cursive;font-weight:400;line-height:1.05;letter-spacing:.5px}
+h1,h2,h3{font-family:"Luckiest Guy","Luckiest Guy Secours",cursive;font-weight:400;line-height:1.05;letter-spacing:.5px}
 a{color:var(--bleu)}
 .wrap{max-width:1150px;margin:0 auto;padding:0 22px}
 .topbar{background:var(--bleu);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:14px 24px;position:relative;z-index:5}
-.topbar .logo{font-family:"Luckiest Guy",cursive;font-size:24px;color:#fff;text-decoration:none}
+.topbar .logo{font-family:"Luckiest Guy","Luckiest Guy Secours",cursive;font-size:24px;color:#fff;text-decoration:none}
 .topbar .logo b{color:var(--jaune)}
 .topbar nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
 .topbar nav a{color:#dbe7ff;text-decoration:none;font-weight:700;font-size:14.5px}
@@ -60,9 +64,9 @@ a{color:var(--bleu)}
 .btn.blanc{background:#fff;color:var(--bleu)}
 .hero .sticker{position:relative;background:#fff;padding:12px 12px 0;border-radius:18px;box-shadow:0 18px 46px rgba(0,0,0,.3);transform:rotate(2deg)}
 .hero .sticker img{width:100%;display:block;border-radius:10px}
-.hero .sticker figcaption{font-family:"Luckiest Guy",cursive;color:var(--encre);text-align:center;font-size:19px;padding:12px 4px 14px}
+.hero .sticker figcaption{font-family:"Luckiest Guy","Luckiest Guy Secours",cursive;color:var(--encre);text-align:center;font-size:19px;padding:12px 4px 14px}
 .badge49{position:absolute;top:-22px;right:-16px;background:var(--rose);color:#fff;border-radius:50%;width:116px;height:116px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;box-shadow:0 8px 20px rgba(0,0,0,.3);transform:rotate(8deg);text-align:center;line-height:1.15;z-index:3}
-.badge49 .n{font-size:26px;font-family:"Luckiest Guy",cursive}
+.badge49 .n{font-size:26px;font-family:"Luckiest Guy","Luckiest Guy Secours",cursive}
 .badge49 small{font-size:10.5px}
 /* marquee */
 .marquee{background:var(--rose);color:#fff;overflow:hidden;white-space:nowrap;padding:12px 0;font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:14px}
@@ -89,14 +93,14 @@ section{padding:72px 0}
 .photo:nth-child(2n){transform:rotate(1.4deg)}
 .photo:nth-child(3n){transform:rotate(-.6deg)}
 .photo img{width:100%;display:block;border-radius:10px}
-.photo figcaption{font-family:"Luckiest Guy",cursive;font-size:16.5px;text-align:center;padding:10px 6px 12px;color:var(--encre);letter-spacing:.4px}
+.photo figcaption{font-family:"Luckiest Guy","Luckiest Guy Secours",cursive;font-size:16.5px;text-align:center;padding:10px 6px 12px;color:var(--encre);letter-spacing:.4px}
 /* ballons stats */
 .ballons{display:flex;gap:30px;flex-wrap:wrap;justify-content:center}
 .ballon{position:relative;width:185px;height:185px;border-radius:50% 50% 50% 50%/55% 55% 45% 45%;background:var(--bleu);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:16px;box-shadow:inset -10px -12px 0 rgba(0,0,0,.12)}
 .ballon::after{content:"";position:absolute;bottom:-14px;left:50%;transform:translateX(-50%);border:8px solid transparent;border-top:12px solid var(--bleu)}
 .ballon:nth-child(2){background:var(--rose)}.ballon:nth-child(2)::after{border-top-color:var(--rose)}
 .ballon:nth-child(3){background:var(--vert)}.ballon:nth-child(3)::after{border-top-color:var(--vert)}
-.ballon .n{font-family:"Luckiest Guy",cursive;font-size:34px}
+.ballon .n{font-family:"Luckiest Guy","Luckiest Guy Secours",cursive;font-size:34px}
 .ballon small{font-size:12.5px;font-weight:700;line-height:1.3}
 /* avis */
 .avis{background:#fff}
@@ -111,14 +115,14 @@ section{padding:72px 0}
 /* étapes */
 .etapes{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px}
 .etape{background:#fff;border-radius:18px;padding:26px 24px;border:3px solid var(--encre);box-shadow:0 8px 0 rgba(43,43,69,.08)}
-.etape .num{font-family:"Luckiest Guy",cursive;font-size:44px;color:var(--rose);line-height:1}
+.etape .num{font-family:"Luckiest Guy","Luckiest Guy Secours",cursive;font-size:44px;color:var(--rose);line-height:1}
 .etape h3{font-size:21px;margin:6px 0;color:var(--bleu)}
 .etape p{font-size:14.5px}
 /* réseau */
 .reseau{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
 .pilier{background:#fff;border:3px solid var(--encre);border-radius:18px;padding:24px;text-decoration:none;color:var(--encre);box-shadow:6px 6px 0 var(--bleu);transition:transform .15s}
 .pilier:hover{transform:translate(-3px,-3px)}
-.pilier b{display:block;font-family:"Luckiest Guy",cursive;font-size:20px;color:var(--bleu);margin-bottom:4px}
+.pilier b{display:block;font-family:"Luckiest Guy","Luckiest Guy Secours",cursive;font-size:20px;color:var(--bleu);margin-bottom:4px}
 .pilier span{font-size:14px}
 /* FAQ */
 details{background:#fff;border:3px solid var(--encre);border-radius:16px;margin-bottom:12px;overflow:hidden}
@@ -140,11 +144,11 @@ details p{padding:0 22px 20px;font-size:15px}
 .pu-etat{font-weight:800;text-align:center;margin-top:16px;font-size:15px;line-height:1.5;max-width:560px;margin-left:auto;margin-right:auto}
 .pu-mini{font-size:13px;opacity:.85;text-align:center;margin-top:12px}
 @media(max-width:560px){.pu-form .duo{grid-template-columns:1fr}}
-.devis .grand-tel{font-family:"Luckiest Guy",cursive;font-size:clamp(36px,6vw,58px);color:var(--jaune);text-decoration:none;display:inline-block;margin:8px 0 4px}
+.devis .grand-tel{font-family:"Luckiest Guy","Luckiest Guy Secours",cursive;font-size:clamp(36px,6vw,58px);color:var(--jaune);text-decoration:none;display:inline-block;margin:8px 0 4px}
 .devis p{max-width:640px;margin:0 auto 10px}
 footer{background:var(--encre);color:#b9b6d0;text-align:center;padding:40px 20px;font-size:14px}
 footer a{color:var(--jaune);text-decoration:none}
-footer .fl{font-family:"Luckiest Guy",cursive;font-size:22px;color:#fff}
+footer .fl{font-family:"Luckiest Guy","Luckiest Guy Secours",cursive;font-size:22px;color:#fff}
 .bande-avis{background:var(--jaune);color:var(--encre);text-align:center;padding:16px 20px;font-weight:800}
 .bande-avis a{color:var(--bleu)}
 @media(max-width:900px){.hero .wrap{grid-template-columns:1fr}.hero .sticker{max-width:430px;margin:0 auto}}
@@ -288,7 +292,7 @@ figure figcaption{transition:color .2s ease}
 .ctamob .tel1{color:#1d47c4}
 footer a{text-decoration:underline}
 </style>
-<script type="application/ld+json" id="pu-webpage">{"@context": "https://schema.org", "@type": "WebPage", "@id": "https://animationenfant974.re/#webpage", "url": "https://animationenfant974.re/", "name": "Animation enfants La Réunion : anniversaires, kids club | Pull Up", "inLanguage": "fr-FR", "datePublished": "2026-07-10", "dateModified": "2026-10-15", "isPartOf": {"@type": "WebSite", "url": "https://animationenfant974.re/"}, "publisher": {"@type": "Organization", "name": "Pull Up Événements", "url": "https://pullup.re/"}}</script>
+<script type="application/ld+json" id="pu-webpage">{"@context": "https://schema.org", "@type": "WebPage", "@id": "https://animationenfant974.re/#webpage", "url": "https://animationenfant974.re/", "name": "Animation enfants La Réunion : anniversaires, kids club | Pull Up", "inLanguage": "fr-FR", "datePublished": "2026-07-10", "dateModified": "2026-10-24", "isPartOf": {"@type": "WebSite", "url": "https://animationenfant974.re/"}, "publisher": {"@type": "Organization", "name": "Pull Up Événements", "url": "https://pullup.re/"}}</script>
 <script type="application/ld+json" id="pu-vo-ziHyh-5B7dA">{"@context": "https://schema.org", "@type": "VideoObject", "name": "Arbre de Noël à La Réunion – Un moment magique signé Pull Up Événements", "description": "AR dan madame dansez danse madame danssez comment bous a gagné voilà on a gag gag il ont gagn arrive voilà plein de cadeaux pour les enfants ça c'est magique ça c'est par J dans mon attention it le tour la terre devant FA quip de encore z allez allez ench ench…", "thumbnailUrl": ["https://i.ytimg.com/vi/ziHyh-5B7dA/hqdefault.jpg", "https://i.ytimg.com/vi/ziHyh-5B7dA/maxresdefault.jpg"], "uploadDate": "2024-08-02", "contentUrl": "https://www.youtube.com/watch?v=ziHyh-5B7dA", "embedUrl": "https://www.youtube-nocookie.com/embed/ziHyh-5B7dA", "publisher": {"@type": "Organization", "name": "Pull Up Événements", "url": "https://pullup.re"}, "url": "https://animationenfant974.re/", "inLanguage": "fr-FR", "duration": "PT5M25S", "transcript": "AR dan madame dansez danse madame danssez comment bous a gagné voilà on a gag gag il ont gagn arrive voilà plein de cadeaux pour les enfants ça c'est magique ça c'est par J dans mon attention it le tour la terre devant FA quip de encore z allez allez ench ench"}</script>
 </head>
 <body>
@@ -311,8 +315,9 @@ footer a{text-decoration:underline}
 </div>
 <!-- /pu-trust -->
 
-<div class="topbar"><a class="logo" href="./">Animation Enfants <b>· La Réunion</b></a><button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button><nav><a href="#activites">Les animations</a><a href="anniversaire-enfant-reunion/">Anniversaires</a><a href="kids-club-galerie-commerciale-reunion/">Kids club</a><a href="#photos">Photos</a><a href="blog/">Le blog</a><a href="agenda/">Agenda</a><a href="#faq">Questions</a><a class="tel" href="tel:+262693491902">📞 06 93 49 19 02</a></nav></div>
+<header class="topbar"><a class="logo" href="./">Animation Enfants <b>· La Réunion</b></a><button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button><nav><a href="#activites">Les animations</a><a href="anniversaire-enfant-reunion/">Anniversaires</a><a href="kids-club-galerie-commerciale-reunion/">Kids club</a><a href="#photos">Photos</a><a href="blog/">Le blog</a><a href="agenda/">Agenda</a><a href="#faq">Questions</a><a class="tel" href="tel:+262693491902">📞 06 93 49 19 02</a></nav></header>
 
+<main>
 <div class="hero"><span class="ballon-flot" style="top:14%;left:3%">🎈</span><span class="ballon-flot" style="top:64%;left:6%;animation-delay:1.8s">🎪</span><span class="ballon-flot" style="top:18%;right:4%;animation-delay:3s">🎈</span><span class="ballon-flot" style="bottom:12%;right:8%;animation-delay:.9s">✨</span>
   <div class="wrap">
     <div>
@@ -702,6 +707,7 @@ footer a{text-decoration:underline}
 </div>
 </section>
 <!-- /pu-communes -->
+</main>
 <footer>
   <p class="fl">Animation Enfants · La Réunion</p>
   <p>Le service animation enfants de <a href="https://pullup.re/">Pull Up Événements</a> — agence événementielle au Tampon, La Réunion (974).</p>
@@ -709,7 +715,7 @@ footer a{text-decoration:underline}
   <p style="margin-top:8px"><a href="https://www.facebook.com/pullupevenements/" rel="me noopener" target="_blank" aria-label="Facebook (8,5 k abonnés), la page Pull Up Événements" title="Facebook (8,5 k abonnés), la page Pull Up Événements">Facebook (8,5 k abonnés)</a> · <a href="https://www.instagram.com/pull_up_evenements" rel="me noopener" target="_blank" aria-label="Pull Up Événements sur Instagram" title="Pull Up Événements sur Instagram">Instagram</a> · <a href="https://www.tiktok.com/@pull.up.evenements" rel="me noopener" target="_blank" aria-label="Pull Up Événements sur TikTok" title="Pull Up Événements sur TikTok">TikTok</a> · <a href="https://www.youtube.com/@pullupevenements" rel="me noopener" target="_blank" aria-label="Pull Up Événements sur YouTube" title="Pull Up Événements sur YouTube">YouTube</a></p>
   <p style="margin-top:8px;font-size:12.5px">📞 06 93 49 19 02 · ✉️ contact@pullup.re · © 2026 Pull Up Événements</p>
   <p class="pu-liens-legaux" style="font-size:13px"><a href="/mentions-legales/" style="text-decoration:underline">Mentions légales</a> · <a href="/confidentialite/" style="text-decoration:underline">Politique de confidentialité</a></p>
-<p id="pu-maj" style="font-size:13px;opacity:.8;margin:12px 0 0">Dernière mise à jour de cette page : <time datetime="2026-10-15">15 octobre 2026</time>.</p></footer>
+<p id="pu-maj" style="font-size:13px;opacity:.8;margin:12px 0 0">Dernière mise à jour de cette page : <time datetime="2026-10-24">24 octobre 2026</time>.</p></footer>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Animations enfants à La Réunion","serviceType":"Animation enfants pour événements","description":"Animations enfants clé en main à La Réunion : mascottes géantes, ateliers créatifs, maquillage, kids club, structures gonflables, mini-disco et spectacles — pour galeries commerciales, entreprises, CSE et journées famille.","url":"https://animationenfant974.re/","provider":{"@type":"LocalBusiness","name":"Pull Up Événements","url":"https://pullup.re","telephone":"+262693491902","email":"contact@pullup.re","founder":{"@type":"Person","name":"Romain Capdepont","jobTitle":"Fondateur","image":"https://animationenfant974.re/images/romain-fondateur-pull-up-evenements.jpg","url":"https://animationenfant974.re/qui-sommes-nous/"},"address":{"@type":"PostalAddress","streetAddress":"6 Impasse des Sœurs Brontë","addressLocality":"Le Tampon","postalCode":"97430","addressRegion":"La Réunion","addressCountry":"FR"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"144","bestRating":"5"},"sameAs":["https://pullup.re","https://teambuilding974.re","https://seminaire974.re","https://soiree974.re","https://arbredenoel974.re","https://hotesse-reunion.re","https://productionvideo974.re","https://karaoke974.re","https://g.page/r/CYZGysYZgL8iEBM","https://www.facebook.com/pullupevenements/","https://www.instagram.com/pull_up_evenements","https://www.tiktok.com/@pull.up.evenements","https://www.youtube.com/@pullupevenements","https://www.linkedin.com/company/pullup-%C3%A9v%C3%A9nements/","https://www.pagesjaunes.fr/pros/63182047","https://fr.mappy.com/poi/668b691bf29adc15d0b11c04","https://www.evenementiel.info/prestataire-11-pull-evenements.html"]},"hasOfferCatalog":{"@type":"OfferCatalog","name":"Animations enfants","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Mascottes et personnages géants"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Ateliers créatifs et maquillage enfants"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Kids club et espaces enfants"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Structures gonflables et jeux géants"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Mini-disco, karaoké enfants et spectacles"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Barbe à papa et chasses au trésor"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Animations d'anniversaire enfant à domicile","url":"https://animationenfant974.re/anniversaire-enfant-reunion/"}}]},"areaServed":[{"@type":"City","name":"Saint-Denis"},{"@type":"City","name":"Saint-Pierre"},{"@type":"City","name":"Saint-Paul"},{"@type":"City","name":"Le Port"},{"@type":"City","name":"Sainte-Marie"},{"@type":"City","name":"Le Tampon"},{"@type":"AdministrativeArea","name":"La Réunion"}]}</script>
 <script type="application/ld+json">

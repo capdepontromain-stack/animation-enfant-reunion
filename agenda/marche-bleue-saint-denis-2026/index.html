@@ -17,17 +17,21 @@
 <link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Baloo+2:wght@400;600;700;800&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
 <style>
+/* polices de secours aux métriques ajustées (anti-CLS, vague 6 26/10/2026) */
+@font-face{font-family:"Luckiest Guy Secours";src:local("Arial Bold"),local("Arial-BoldMT"),local("Arial");size-adjust:107.13%;ascent-override:65.63%;descent-override:27.71%;line-gap-override:0%}
+@font-face{font-family:"Baloo 2 Secours";src:local("Arial"),local("ArialMT");size-adjust:96.59%;ascent-override:111.6%;descent-override:54.25%;line-gap-override:0%}
 :root{--bleu:#2f6df6;--jaune:#ffd23f;--rose:#ff5d8f;--vert:#3ecf8e;--violet:#7b5ea7;--papier:#fff8ef;--encre:#2b2b45}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:"Baloo 2",sans-serif;color:var(--encre);background:var(--papier);line-height:1.7;font-size:17px;background-image:radial-gradient(#ffd23f22 3px,transparent 3px),radial-gradient(#ff5d8f22 3px,transparent 3px);background-size:90px 90px,70px 70px;background-position:0 0,35px 45px}
-h1,h2,h3{font-family:"Luckiest Guy",cursive;font-weight:400;line-height:1.08;letter-spacing:.5px}
+body{font-family:"Baloo 2","Baloo 2 Secours",sans-serif;color:var(--encre);background:var(--papier);line-height:1.7;font-size:17px;background-image:radial-gradient(#ffd23f22 3px,transparent 3px),radial-gradient(#ff5d8f22 3px,transparent 3px);background-size:90px 90px,70px 70px;background-position:0 0,35px 45px}
+h1,h2,h3{font-family:"Luckiest Guy","Luckiest Guy Secours",cursive;font-weight:400;line-height:1.08;letter-spacing:.5px}
 a{color:var(--bleu)}
 .wrap{max-width:960px;margin:0 auto;padding:0 22px}
 .topbar{background:var(--bleu);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:14px 24px}
-.topbar .logo{font-family:"Luckiest Guy",cursive;font-size:22px;color:#fff;text-decoration:none}
+.topbar .logo{font-family:"Luckiest Guy","Luckiest Guy Secours",cursive;font-size:22px;color:#fff;text-decoration:none}
 .topbar .logo b{color:var(--jaune)}
 .topbar nav a{color:#dbe7ff;text-decoration:none;font-weight:700;font-size:14.5px;margin-left:18px}
 .topbar nav a.tel{background:var(--jaune);color:var(--encre);padding:8px 18px;border-radius:30px;white-space:nowrap}
@@ -52,7 +56,7 @@ li{margin-bottom:8px}
 .carte{background:#fff;border:3px solid var(--encre);border-radius:16px;padding:18px 20px;box-shadow:6px 6px 0 var(--jaune)}
 .carte:nth-child(2){box-shadow:6px 6px 0 var(--rose)}
 .carte:nth-child(3){box-shadow:6px 6px 0 var(--vert)}
-.carte .titre{font-family:"Luckiest Guy",cursive;font-size:21px;color:var(--bleu)}
+.carte .titre{font-family:"Luckiest Guy","Luckiest Guy Secours",cursive;font-size:21px;color:var(--bleu)}
 .carte p{margin:8px 0 0;font-size:15.5px}
 .encart{background:#fff;border:3px solid var(--encre);border-radius:14px;padding:16px 20px;margin:18px 0;box-shadow:6px 6px 0 var(--vert)}
 img.photo{width:100%;border:3px solid var(--encre);border-radius:14px;margin:10px 0 24px}
@@ -60,13 +64,13 @@ img.photo{width:100%;border:3px solid var(--encre);border-radius:14px;margin:10p
 .planning ul{list-style:none;margin:0}
 .planning li{border-bottom:2px dashed #eee;padding:8px 0;margin:0}
 .planning li:last-child{border-bottom:none}
-.planning b.h{color:var(--rose);font-family:"Luckiest Guy",cursive;font-size:18px;margin-right:10px}
+.planning b.h{color:var(--rose);font-family:"Luckiest Guy","Luckiest Guy Secours",cursive;font-size:18px;margin-right:10px}
 .faq details{background:#fff;border:3px solid var(--encre);border-radius:14px;padding:14px 20px;margin-bottom:12px}
 .faq summary{font-weight:800;cursor:pointer}
 .faq p{margin:10px 0 0}
 .cta{background:var(--bleu);color:#fff;text-align:center;padding:40px 26px;border-radius:20px;margin:10px 0 48px}
-.cta .gros{font-family:"Luckiest Guy",cursive;font-size:27px}
-.cta a.tel{font-family:"Luckiest Guy",cursive;font-size:36px;color:var(--jaune);text-decoration:none;display:inline-block;margin:10px 0}
+.cta .gros{font-family:"Luckiest Guy","Luckiest Guy Secours",cursive;font-size:27px}
+.cta a.tel{font-family:"Luckiest Guy","Luckiest Guy Secours",cursive;font-size:36px;color:var(--jaune);text-decoration:none;display:inline-block;margin:10px 0}
 .cta .btn{display:inline-block;background:var(--jaune);color:var(--encre);font-weight:800;padding:12px 26px;border-radius:30px;text-decoration:none;margin-top:6px}
 footer{background:var(--encre);color:#b9b6d0;text-align:center;padding:36px 20px;font-size:13.5px}
 footer a{color:var(--jaune);text-decoration:none}
@@ -93,7 +97,7 @@ footer a{color:var(--jaune);text-decoration:none}
 <a href="tel:+262693491902"><b>📞 06 93 49 19 02</b></a>
 </div>
 <!-- /pu-trust -->
-<div class="topbar"><a class="logo" href="../../">Animation Enfants <b>· La Réunion</b></a><nav><a href="../../">Accueil</a><a href="../../#activites">Les animations</a><a href="../../blog/">Le blog</a><a class="tel" href="tel:+262693491902">📞 06 93 49 19 02</a></nav></div>
+<header class="topbar"><a class="logo" href="../../">Animation Enfants <b>· La Réunion</b></a><nav><a href="../../">Accueil</a><a href="../../#activites">Les animations</a><a href="../../blog/">Le blog</a><a class="tel" href="tel:+262693491902">📞 06 93 49 19 02</a></nav></header>
 
 <div class="entete">
 <span class="etq2">🛍️ Galeries &amp; centres commerciaux</span>
